@@ -7,6 +7,11 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     namespace "com.bledatareceiver"
+    
+    buildFeatures {
+        buildConfig true
+    }
+    
     defaultConfig {
         applicationId "com.bledatareceiver"
         minSdkVersion rootProject.ext.minSdkVersion
