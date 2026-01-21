@@ -6,19 +6,17 @@
 - **問題**: `colors.xml` 文件缺失，導致啟動圖標無法找到背景顏色
 - **解決**: 創建了 `android/app/src/main/res/values/colors.xml` 文件，包含必要的顏色定義
 
-### 2. 缺失的應用圖標
-- **問題**: 所有密度的 mipmap 目錄都是空的，缺少應用圖標文件
-- **解決**: 為所有密度創建了 XML 向量圖標：
-  - `mipmap-hdpi/` (72dp)
-  - `mipmap-mdpi/` (48dp) 
-  - `mipmap-xhdpi/` (96dp)
-  - `mipmap-xxhdpi/` (144dp)
-  - `mipmap-xxxhdpi/` (192dp)
-  - 包含普通和圓形版本的圖標
+### 2. 應用圖標衝突問題
+- **問題**: React Native 期望 PNG 圖標文件，但創建了 XML 向量圖標，導致資源重複錯誤
+- **解決**: 
+  - 移除所有 mipmap 目錄中的 XML 圖標文件
+  - 移除自適應圖標配置文件
+  - 創建單一的 drawable 向量圖標 (`ic_launcher.xml`)
+  - 更新 AndroidManifest.xml 使用 drawable 圖標
 
 ### 3. 圖標設計
 - **設計**: 藍色圓形背景 (#2196F3) + 白色醫療十字圖案
-- **兼容性**: 支持 Android 5.0+ 和自適應圖標 (Android 8.0+)
+- **兼容性**: 使用向量圖標，支持所有 Android 版本和屏幕密度
 
 ## 🚀 下一步操作
 
