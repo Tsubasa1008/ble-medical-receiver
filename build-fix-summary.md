@@ -6,10 +6,12 @@
 - **問題**: `colors.xml` 文件缺失，導致啟動圖標無法找到背景顏色
 - **解決**: 創建了 `android/app/src/main/res/values/colors.xml` 文件，包含必要的顏色定義
 
-### 2. 應用圖標衝突問題
-- **問題**: React Native 期望 PNG 圖標文件，但創建了 XML 向量圖標，導致資源重複錯誤
+### 2. 應用圖標衝突和損壞問題
+- **問題**: 
+  - React Native 期望 PNG 圖標文件，但創建了 XML 向量圖標，導致資源重複錯誤
+  - 存在損壞的空 PNG 文件 (`ic_launcher.png` 0 字節) 導致 AAPT 編譯失敗
 - **解決**: 
-  - 移除所有 mipmap 目錄中的 XML 圖標文件
+  - 移除所有 mipmap 目錄中的 XML 和損壞的 PNG 圖標文件
   - 移除自適應圖標配置文件
   - 創建單一的 drawable 向量圖標 (`ic_launcher.xml`)
   - 更新 AndroidManifest.xml 使用 drawable 圖標
