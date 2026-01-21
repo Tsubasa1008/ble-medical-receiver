@@ -1,0 +1,1 @@
+C:\Users\User\Desktop\Temp\BLEReceiver\obj\Debug\net9.0\BLEDataReceiver.csproj.AssemblyReference.cache

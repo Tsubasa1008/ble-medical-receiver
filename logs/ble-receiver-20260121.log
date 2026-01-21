@@ -1,0 +1,1358 @@
+[2026-01-21 10:07:02.694 +08:00 INF] BLE Data Receiver starting...
+[2026-01-21 10:07:02.813 +08:00 INF] Welcome message displayed
+[2026-01-21 10:07:02.817 +08:00 INF] Starting BLE Receiver...
+[2026-01-21 10:07:02.891 +08:00 INF] Starting BLE advertisement watcher...
+[2026-01-21 10:07:02.950 +08:00 INF] BLE advertisement watcher started successfully
+[2026-01-21 10:07:02.951 +08:00 INF] BLE Receiver started successfully
+[2026-01-21 10:08:56.330 +08:00 INF] BLE Data Receiver starting...
+[2026-01-21 10:08:56.439 +08:00 INF] Welcome message displayed
+[2026-01-21 10:08:56.442 +08:00 INF] Starting BLE Receiver...
+[2026-01-21 10:08:56.517 +08:00 INF] Starting BLE advertisement watcher...
+[2026-01-21 10:08:56.570 +08:00 INF] BLE advertisement watcher started successfully
+[2026-01-21 10:08:56.572 +08:00 INF] BLE Receiver started successfully
+[2026-01-21 10:09:10.691 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:09:10.882 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:09:10.888 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:09:10.896 +08:00 INF] Connection status changed for device 211273098927216: "Connecting"
+[2026-01-21 10:09:10.971 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:09:10.973 +08:00 INF] Successfully connected to device: 211273098927216
+[2026-01-21 10:09:10.974 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:09:10.977 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 10:09:10.977 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:09:10.978 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 10:09:10.981 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 10:09:11.090 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:09:11.091 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 10:09:11.092 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:09:12.067 +08:00 ERR] Error subscribing to characteristic: "00002a1c-0000-1000-8000-00805f9b34fb"
+System.Runtime.InteropServices.COMException (0x80650080)
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToCharacteristicAsync(GattCharacteristic characteristic) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 398
+[2026-01-21 10:09:12.100 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:09:36.132 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 10:09:36.133 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 10:09:36.134 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 10:09:36.189 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:09:36.191 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 10:09:36.192 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:10:06.369 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:10:06.482 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:10:06.485 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:10:06.486 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:10:06.486 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:10:06.629 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:10:06.719 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:10:06.720 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:10:06.721 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:10:06.722 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:10:06.837 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216
+[2026-01-21 10:10:06.853 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:10:08.343 +08:00 ERR] Error subscribing to characteristic: "00002a1c-0000-1000-8000-00805f9b34fb"
+System.Runtime.InteropServices.COMException (0x80650080)
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToCharacteristicAsync(GattCharacteristic characteristic) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 398
+[2026-01-21 10:10:08.354 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216
+[2026-01-21 10:10:08.355 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:10:28.864 +08:00 INF] Shutdown requested by user
+[2026-01-21 10:10:28.865 +08:00 INF] Application shutdown initiated
+[2026-01-21 10:10:28.867 +08:00 INF] Stopping BLE Receiver...
+[2026-01-21 10:10:28.868 +08:00 INF] Stopping BLE advertisement watcher...
+[2026-01-21 10:10:28.869 +08:00 INF] BLE advertisement watcher stopped successfully
+[2026-01-21 10:10:28.871 +08:00 INF] Advertisement watcher stopped. Error: "Success"
+[2026-01-21 10:10:28.874 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 10:10:28.876 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 10:10:28.877 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 10:10:28.879 +08:00 INF] Disconnected from all devices
+[2026-01-21 10:10:28.880 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 10:10:28.881 +08:00 INF] Cleaned up all device subscriptions
+[2026-01-21 10:10:28.882 +08:00 INF] BLE Receiver stopped successfully
+[2026-01-21 10:10:28.883 +08:00 INF] Status displayed: Application stopped
+[2026-01-21 10:10:28.884 +08:00 INF] BLE Data Receiver stopped successfully
+[2026-01-21 10:15:12.452 +08:00 INF] BLE Data Receiver starting...
+[2026-01-21 10:15:12.566 +08:00 INF] Welcome message displayed
+[2026-01-21 10:15:12.570 +08:00 INF] Starting BLE Receiver...
+[2026-01-21 10:15:12.645 +08:00 INF] Starting BLE advertisement watcher...
+[2026-01-21 10:15:12.700 +08:00 INF] BLE advertisement watcher started successfully
+[2026-01-21 10:15:12.701 +08:00 INF] BLE Receiver started successfully
+[2026-01-21 10:15:20.983 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:15:21.117 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:15:21.122 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:15:21.125 +08:00 INF] Connection status changed for device 211273098927216: "Connecting"
+[2026-01-21 10:15:21.188 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:15:21.190 +08:00 INF] Successfully connected to device: 211273098927216
+[2026-01-21 10:15:21.190 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:15:21.194 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 10:15:21.195 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:15:21.195 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 10:15:21.198 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 10:15:21.221 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:15:21.256 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:15:21.313 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:15:21.313 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:15:21.315 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:15:21.316 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 10:15:21.317 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:15:21.318 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:15:21.319 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:15:21.333 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:15:21.345 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:15:21.373 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:15:21.379 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:15:21.389 +08:00 INF] Will subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" for device type "Thermometer"
+[2026-01-21 10:15:21.391 +08:00 INF] Attempting to subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:15:21.398 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:15:21.411 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:15:21.439 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:15:21.450 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:15:21.465 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001523-1212-efde-1523-785feabcd123"
+[2026-01-21 10:15:21.466 +08:00 INF] Attempting fallback subscription to characteristic "00001524-1212-efde-1523-785feabcd123"
+[2026-01-21 10:15:22.199 +08:00 INF] Successfully enabled "Indicate" for characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:15:22.201 +08:00 INF] Successfully subscribed to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" on device 211273098927216
+[2026-01-21 10:15:22.208 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:15:22.210 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 1 characteristics
+[2026-01-21 10:15:22.265 +08:00 WRN] 體溫數值超出正常範圍 - 溫度: "Infinity"°"Celsius"
+[2026-01-21 10:15:22.268 +08:00 WRN] 數據驗證失敗，設備: C026DA031C70, 類型: "Thermometer"
+[2026-01-21 10:15:22.269 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: false
+[2026-01-21 10:15:22.271 +08:00 WRN] Invalid data received from device C026DA031C70: null
+[2026-01-21 10:15:22.315 +08:00 INF] Successfully enabled "Notify" for characteristic "00001524-1212-efde-1523-785feabcd123"
+[2026-01-21 10:15:22.317 +08:00 INF] Successfully subscribed to fallback characteristic "00001524-1212-efde-1523-785feabcd123" on device 211273098927216
+[2026-01-21 10:15:22.318 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 1 characteristics
+[2026-01-21 10:15:37.444 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:15:37.540 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:15:37.542 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:15:37.543 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:15:37.543 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:15:37.601 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:15:37.619 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:15:37.633 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:15:37.663 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:15:37.672 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:15:37.683 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:15:37.684 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:15:37.685 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 10:15:41.349 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 10:15:41.355 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 10:15:41.356 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 10:15:41.414 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:15:41.416 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 10:15:41.417 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:15:41.771 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:15:41.882 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:15:41.885 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:15:41.886 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:15:41.887 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:15:41.944 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:15:41.961 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:15:41.975 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:15:42.002 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:15:42.012 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:15:42.023 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:15:42.024 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:15:42.025 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 10:15:42.655 +08:00 WRN] 體溫數值超出正常範圍 - 溫度: "Infinity"°"Celsius"
+[2026-01-21 10:15:42.657 +08:00 WRN] 數據驗證失敗，設備: C026DA031C70, 類型: "Thermometer"
+[2026-01-21 10:15:42.658 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: false
+[2026-01-21 10:15:42.659 +08:00 WRN] Invalid data received from device C026DA031C70: null
+[2026-01-21 10:15:59.300 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:15:59.389 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:15:59.390 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:15:59.391 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:15:59.392 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:15:59.448 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:15:59.465 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:15:59.479 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:15:59.508 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:15:59.517 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:15:59.527 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:15:59.528 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:15:59.529 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 10:16:59.313 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:16:59.426 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:16:59.427 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:16:59.428 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:16:59.429 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:16:59.483 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:16:59.501 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:16:59.516 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:16:59.543 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:16:59.558 +08:00 INF] Will subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" for device type "Thermometer"
+[2026-01-21 10:16:59.560 +08:00 INF] Attempting to subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:17:07.291 +08:00 ERR] Failed to enable notifications for characteristic "00002a1c-0000-1000-8000-00805f9b34fb": "Unreachable"
+[2026-01-21 10:17:07.299 +08:00 WRN] Failed to subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" on device 211273098927216
+[2026-01-21 10:17:07.300 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001809-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:17:07.301 +08:00 INF] Attempting fallback subscription to characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:17:14.991 +08:00 ERR] Failed to enable notifications for characteristic "00002a1c-0000-1000-8000-00805f9b34fb": "Unreachable"
+[2026-01-21 10:17:15.007 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001523-1212-efde-1523-785feabcd123"
+[2026-01-21 10:17:15.009 +08:00 INF] Attempting fallback subscription to characteristic "00001524-1212-efde-1523-785feabcd123"
+[2026-01-21 10:17:18.925 +08:00 INF] Shutdown requested by user
+[2026-01-21 10:17:18.926 +08:00 INF] Application shutdown initiated
+[2026-01-21 10:17:18.928 +08:00 INF] Stopping BLE Receiver...
+[2026-01-21 10:17:18.929 +08:00 INF] Stopping BLE advertisement watcher...
+[2026-01-21 10:17:18.930 +08:00 INF] BLE advertisement watcher stopped successfully
+[2026-01-21 10:17:18.931 +08:00 INF] Advertisement watcher stopped. Error: "Success"
+[2026-01-21 10:17:18.932 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 10:17:18.934 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 10:17:18.935 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 10:17:18.936 +08:00 INF] Disconnected from all devices
+[2026-01-21 10:17:18.937 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 10:17:18.938 +08:00 INF] Cleaned up all device subscriptions
+[2026-01-21 10:17:18.939 +08:00 INF] BLE Receiver stopped successfully
+[2026-01-21 10:17:18.941 +08:00 INF] Status displayed: Application stopped
+[2026-01-21 10:17:18.941 +08:00 INF] BLE Data Receiver stopped successfully
+[2026-01-21 10:25:17.830 +08:00 INF] BLE Data Receiver starting...
+[2026-01-21 10:25:17.947 +08:00 INF] Welcome message displayed
+[2026-01-21 10:25:17.950 +08:00 INF] Starting BLE Receiver...
+[2026-01-21 10:25:18.026 +08:00 INF] Starting BLE advertisement watcher...
+[2026-01-21 10:25:18.083 +08:00 INF] BLE advertisement watcher started successfully
+[2026-01-21 10:25:18.085 +08:00 INF] BLE Receiver started successfully
+[2026-01-21 10:25:30.029 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:25:30.162 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:25:30.168 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:25:30.172 +08:00 INF] Connection status changed for device 211273098927216: "Connecting"
+[2026-01-21 10:25:30.237 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:25:30.239 +08:00 INF] Successfully connected to device: 211273098927216
+[2026-01-21 10:25:30.240 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:25:30.243 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 10:25:30.244 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:25:30.244 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 10:25:30.247 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 10:25:30.305 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:25:30.360 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:25:30.362 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 10:25:30.363 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:25:30.378 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:25:30.395 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:25:30.424 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:25:30.440 +08:00 INF] Will subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" for device type "Thermometer"
+[2026-01-21 10:25:30.442 +08:00 INF] Attempting to subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:25:34.347 +08:00 INF] Successfully enabled "Indicate" for characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:25:34.349 +08:00 INF] Successfully subscribed to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" on device 211273098927216
+[2026-01-21 10:25:34.363 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 1 characteristics
+[2026-01-21 10:25:50.399 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 10:25:50.402 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 10:25:50.403 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 10:25:50.461 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:25:50.462 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 10:25:50.464 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:25:55.466 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 10:25:55.471 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 10:25:55.472 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 10:25:55.549 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:25:55.551 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 10:25:55.552 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:26:05.391 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:26:05.476 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:26:05.478 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:26:05.479 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:26:05.480 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:26:05.534 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:26:05.552 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:26:05.565 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:26:05.593 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:26:05.601 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:26:05.610 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:26:05.612 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:26:05.613 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 10:27:05.393 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:27:05.505 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:27:05.507 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:27:05.508 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:27:05.508 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:27:05.562 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:27:05.580 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:27:05.593 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:27:05.621 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:27:05.636 +08:00 INF] Will subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" for device type "Thermometer"
+[2026-01-21 10:27:05.638 +08:00 INF] Attempting to subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:27:27.091 +08:00 ERR] Error subscribing to characteristic: "00002a1c-0000-1000-8000-00805f9b34fb"
+System.Runtime.InteropServices.COMException (0x80004004)
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToCharacteristicAsync(GattCharacteristic characteristic) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 530
+[2026-01-21 10:27:27.102 +08:00 WRN] Failed to subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" on device 211273098927216
+[2026-01-21 10:27:27.103 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001809-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:27:27.104 +08:00 INF] Attempting fallback subscription to characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:27:34.805 +08:00 ERR] Failed to enable notifications for characteristic "00002a1c-0000-1000-8000-00805f9b34fb": "Unreachable"
+[2026-01-21 10:27:34.827 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001523-1212-efde-1523-785feabcd123"
+[2026-01-21 10:27:34.828 +08:00 INF] Attempting fallback subscription to characteristic "00001524-1212-efde-1523-785feabcd123"
+[2026-01-21 10:27:42.086 +08:00 INF] Successfully enabled "Notify" for characteristic "00001524-1212-efde-1523-785feabcd123"
+[2026-01-21 10:27:42.088 +08:00 INF] Successfully subscribed to fallback characteristic "00001524-1212-efde-1523-785feabcd123" on device 211273098927216
+[2026-01-21 10:27:42.089 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 1 characteristics
+[2026-01-21 10:28:20.635 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:28:20.749 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:28:20.751 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:28:20.752 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:28:20.752 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:28:20.808 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:28:20.826 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:28:20.838 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:28:20.865 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:28:20.875 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:28:20.884 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:28:20.885 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:28:20.886 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 10:28:47.878 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:28:47.969 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:28:47.971 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:28:47.971 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:28:47.972 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:28:48.029 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:28:48.047 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:28:48.060 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:28:48.088 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:28:48.103 +08:00 INF] Will subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" for device type "Thermometer"
+[2026-01-21 10:28:48.105 +08:00 INF] Attempting to subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:28:49.707 +08:00 INF] Successfully enabled "Indicate" for characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:28:49.709 +08:00 INF] Successfully subscribed to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" on device 211273098927216
+[2026-01-21 10:28:49.723 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 1 characteristics
+[2026-01-21 10:28:49.775 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 6C 01 00 FF DB 07 01 08 00 12 00 00
+[2026-01-21 10:28:49.781 +08:00 WRN] 體溫數值超出正常範圍 - 溫度: "Infinity"°"Celsius"
+[2026-01-21 10:28:49.783 +08:00 WRN] 數據驗證失敗，設備: C026DA031C70, 類型: "Thermometer"
+[2026-01-21 10:28:49.783 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: false
+[2026-01-21 10:28:49.785 +08:00 WRN] Invalid data received from device C026DA031C70: null
+[2026-01-21 10:29:05.519 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:29:05.608 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:29:05.610 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:29:05.611 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:29:05.611 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:29:05.667 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:29:05.685 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:05.699 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:05.726 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:05.735 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:29:05.743 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:29:05.744 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:29:05.745 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 10:29:05.767 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:29:05.858 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:29:05.860 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:29:05.861 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:29:05.862 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:29:05.916 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:29:05.934 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:05.948 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:05.975 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:05.984 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:29:05.994 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:29:05.995 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:29:05.996 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 10:29:07.048 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:29:07.142 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:29:07.144 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:29:07.145 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:29:07.146 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:29:07.199 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:29:07.218 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:07.231 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:07.258 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:07.267 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:29:07.277 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:29:07.278 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:29:07.279 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 10:29:08.337 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:29:08.431 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:29:08.433 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:29:08.434 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:29:08.435 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:29:08.491 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:29:08.509 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:08.522 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:08.549 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:08.559 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:29:08.569 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:29:08.571 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:29:08.572 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 10:29:08.843 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:29:08.936 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:29:08.937 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:29:08.938 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:29:08.938 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:29:08.992 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:29:09.009 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:09.022 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:09.050 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:09.060 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:29:09.069 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:29:09.070 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:29:09.071 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 10:29:09.885 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:29:09.989 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:29:09.991 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:29:09.992 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:29:09.993 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:29:10.046 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:29:10.063 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:10.077 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:10.106 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:10.115 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:29:10.125 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:29:10.126 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:29:10.126 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:29:10.128 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 10:29:10.223 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:29:10.225 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:29:10.226 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:29:10.226 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:29:10.281 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:29:10.299 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:10.313 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:10.341 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:10.349 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:29:10.358 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:29:10.359 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:29:10.360 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 10:29:11.068 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 6D 01 00 FF DB 07 01 08 00 12 00 00
+[2026-01-21 10:29:11.070 +08:00 WRN] 體溫數值超出正常範圍 - 溫度: "Infinity"°"Celsius"
+[2026-01-21 10:29:11.071 +08:00 WRN] 數據驗證失敗，設備: C026DA031C70, 類型: "Thermometer"
+[2026-01-21 10:29:11.072 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: false
+[2026-01-21 10:29:11.073 +08:00 WRN] Invalid data received from device C026DA031C70: null
+[2026-01-21 10:29:41.820 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:29:41.939 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:29:41.941 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:29:41.941 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:29:41.942 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:29:41.997 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:29:42.015 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:42.029 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:42.055 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:42.071 +08:00 INF] Will subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" for device type "Thermometer"
+[2026-01-21 10:29:42.072 +08:00 INF] Attempting to subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:43.529 +08:00 INF] Successfully enabled "Indicate" for characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:29:43.535 +08:00 INF] Successfully subscribed to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" on device 211273098927216
+[2026-01-21 10:29:43.551 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 1 characteristics
+[2026-01-21 10:29:56.839 +08:00 INF] Shutdown requested by user
+[2026-01-21 10:29:56.839 +08:00 INF] Application shutdown initiated
+[2026-01-21 10:29:56.841 +08:00 INF] Stopping BLE Receiver...
+[2026-01-21 10:29:56.842 +08:00 INF] Stopping BLE advertisement watcher...
+[2026-01-21 10:29:56.843 +08:00 INF] BLE advertisement watcher stopped successfully
+[2026-01-21 10:29:56.844 +08:00 INF] Advertisement watcher stopped. Error: "Success"
+[2026-01-21 10:29:56.845 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 10:29:56.847 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 10:29:56.848 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 10:29:56.849 +08:00 INF] Disconnected from all devices
+[2026-01-21 10:29:56.851 +08:00 INF] Cleaned up all device subscriptions
+[2026-01-21 10:29:56.851 +08:00 INF] BLE Receiver stopped successfully
+[2026-01-21 10:29:56.852 +08:00 INF] Status displayed: Application stopped
+[2026-01-21 10:29:56.853 +08:00 INF] BLE Data Receiver stopped successfully
+[2026-01-21 10:32:00.901 +08:00 INF] BLE Data Receiver starting...
+[2026-01-21 10:32:01.008 +08:00 INF] Welcome message displayed
+[2026-01-21 10:32:01.011 +08:00 INF] Starting BLE Receiver...
+[2026-01-21 10:32:01.086 +08:00 INF] Starting BLE advertisement watcher...
+[2026-01-21 10:32:01.139 +08:00 INF] BLE advertisement watcher started successfully
+[2026-01-21 10:32:01.140 +08:00 INF] BLE Receiver started successfully
+[2026-01-21 10:32:06.554 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:32:06.683 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:32:06.687 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:32:06.690 +08:00 INF] Connection status changed for device 211273098927216: "Connecting"
+[2026-01-21 10:32:06.750 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:32:06.751 +08:00 INF] Successfully connected to device: 211273098927216
+[2026-01-21 10:32:06.752 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:32:06.755 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 10:32:06.756 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 10:32:06.756 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:32:06.757 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 10:32:06.813 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:32:06.867 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:32:06.870 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 10:32:06.871 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:32:06.886 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:32:06.899 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:32:06.926 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:32:06.944 +08:00 INF] Will subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" for device type "Thermometer"
+[2026-01-21 10:32:06.945 +08:00 INF] Attempting to subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:32:11.991 +08:00 INF] Successfully enabled "Indicate" for characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:32:11.993 +08:00 INF] Successfully subscribed to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" on device 211273098927216
+[2026-01-21 10:32:12.009 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 1 characteristics
+[2026-01-21 10:32:12.056 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 6D 01 00 FF DB 07 01 08 00 15 00 00
+[2026-01-21 10:32:12.064 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: true
+[2026-01-21 10:32:12.066 +08:00 INF] Valid data received from device C026DA031C70: "Thermometer"
+[2026-01-21 10:32:31.915 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 10:32:31.920 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 10:32:31.920 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 10:32:31.991 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:32:31.994 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 10:32:31.995 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:32:34.749 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:32:34.837 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:32:34.838 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:32:34.839 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:32:34.840 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:32:34.894 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:32:34.911 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:32:34.924 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:32:34.950 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:32:34.959 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:32:34.968 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:32:34.970 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:32:34.970 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 10:32:36.230 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 FE 00 00 FF DB 07 01 08 00 16 00 00
+[2026-01-21 10:32:36.237 +08:00 WRN] 體溫數值超出正常範圍 - 溫度: 25.4°"Celsius"
+[2026-01-21 10:32:36.238 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: true
+[2026-01-21 10:32:36.239 +08:00 INF] Valid data received from device C026DA031C70: "Thermometer"
+[2026-01-21 10:32:55.773 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:32:55.858 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:32:55.859 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:32:55.860 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:32:55.860 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:32:55.916 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:32:55.933 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:32:55.948 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:32:55.976 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:32:55.986 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:32:55.994 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:32:55.995 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:32:55.996 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 10:33:39.493 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:33:39.609 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:33:39.611 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:33:39.612 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:33:39.613 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:33:39.667 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:33:39.685 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:33:39.700 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:33:39.728 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:33:39.743 +08:00 INF] Will subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" for device type "Thermometer"
+[2026-01-21 10:33:39.745 +08:00 INF] Attempting to subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:33:42.293 +08:00 INF] Successfully enabled "Indicate" for characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:33:42.301 +08:00 INF] Successfully subscribed to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" on device 211273098927216
+[2026-01-21 10:33:42.316 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 1 characteristics
+[2026-01-21 10:34:04.409 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:34:04.500 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:34:04.502 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:34:04.503 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:34:04.504 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:34:04.560 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:34:04.578 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:34:04.594 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:34:04.623 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:34:04.633 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:34:04.649 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001523-1212-efde-1523-785feabcd123"
+[2026-01-21 10:34:04.651 +08:00 INF] Attempting fallback subscription to characteristic "00001524-1212-efde-1523-785feabcd123"
+[2026-01-21 10:34:05.030 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 6B 01 00 FF DB 07 01 08 00 17 00 00
+[2026-01-21 10:34:05.033 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: true
+[2026-01-21 10:34:05.034 +08:00 INF] Valid data received from device C026DA031C70: "Thermometer"
+[2026-01-21 10:34:05.871 +08:00 INF] Successfully enabled "Notify" for characteristic "00001524-1212-efde-1523-785feabcd123"
+[2026-01-21 10:34:05.872 +08:00 INF] Successfully subscribed to fallback characteristic "00001524-1212-efde-1523-785feabcd123" on device 211273098927216
+[2026-01-21 10:34:05.873 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 1 characteristics
+[2026-01-21 10:35:15.024 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:35:15.141 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:35:15.143 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:35:15.144 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:35:15.145 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:35:15.200 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:35:15.218 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:35:15.231 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:35:15.259 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:35:15.275 +08:00 INF] Will subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" for device type "Thermometer"
+[2026-01-21 10:35:15.276 +08:00 INF] Attempting to subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:35:19.252 +08:00 INF] Successfully enabled "Indicate" for characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:35:19.254 +08:00 INF] Successfully subscribed to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" on device 211273098927216
+[2026-01-21 10:35:19.263 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:35:19.264 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 1 characteristics
+[2026-01-21 10:35:19.311 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 6C 01 00 FF DB 07 01 08 00 18 00 00
+[2026-01-21 10:35:19.314 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: true
+[2026-01-21 10:35:19.315 +08:00 INF] Valid data received from device C026DA031C70: "Thermometer"
+[2026-01-21 10:36:15.034 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:36:15.155 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:36:15.156 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:36:15.157 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 10:36:15.158 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:36:15.217 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:36:15.241 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:36:15.256 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:36:15.286 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:36:15.294 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216: "AccessDenied"
+[2026-01-21 10:36:15.314 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001523-1212-efde-1523-785feabcd123"
+[2026-01-21 10:36:15.316 +08:00 INF] Attempting fallback subscription to characteristic "00001524-1212-efde-1523-785feabcd123"
+[2026-01-21 10:36:23.049 +08:00 ERR] Failed to enable notifications for characteristic "00001524-1212-efde-1523-785feabcd123": "Unreachable"
+[2026-01-21 10:36:23.055 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 10:36:23.056 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 10:39:02.534 +08:00 INF] Shutdown requested by user
+[2026-01-21 10:39:02.535 +08:00 INF] Application shutdown initiated
+[2026-01-21 10:39:02.538 +08:00 INF] Stopping BLE Receiver...
+[2026-01-21 10:39:02.539 +08:00 INF] Stopping BLE advertisement watcher...
+[2026-01-21 10:39:02.540 +08:00 INF] BLE advertisement watcher stopped successfully
+[2026-01-21 10:39:02.541 +08:00 INF] Advertisement watcher stopped. Error: "Success"
+[2026-01-21 10:39:02.543 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 10:39:02.545 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 10:39:02.545 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 10:39:02.547 +08:00 INF] Disconnected from all devices
+[2026-01-21 10:39:02.548 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 10:39:02.548 +08:00 INF] Cleaned up all device subscriptions
+[2026-01-21 10:39:02.549 +08:00 INF] BLE Receiver stopped successfully
+[2026-01-21 10:39:02.550 +08:00 INF] Status displayed: Application stopped
+[2026-01-21 10:39:02.550 +08:00 INF] BLE Data Receiver stopped successfully
+[2026-01-21 10:48:24.513 +08:00 INF] BLE Data Receiver starting...
+[2026-01-21 10:48:24.623 +08:00 INF] Welcome message displayed
+[2026-01-21 10:48:24.627 +08:00 INF] Starting BLE Receiver...
+[2026-01-21 10:48:24.700 +08:00 INF] Starting BLE advertisement watcher...
+[2026-01-21 10:48:24.753 +08:00 INF] BLE advertisement watcher started successfully
+[2026-01-21 10:48:24.755 +08:00 INF] BLE Receiver started successfully
+[2026-01-21 10:48:41.697 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:48:41.830 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:48:41.836 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 10:48:41.836 +08:00 WRN] Device 211273098927216 not found in connection list
+[2026-01-21 10:48:42.908 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:48:42.911 +08:00 INF] Connection status changed for device 211273098927216: "Connecting"
+[2026-01-21 10:48:42.971 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:48:42.973 +08:00 INF] Successfully connected to device: 211273098927216
+[2026-01-21 10:48:42.973 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:48:42.976 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 10:48:42.977 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 10:48:42.979 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 10:48:43.033 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:48:43.036 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 10:48:43.036 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:48:43.481 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:48:43.538 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:48:43.562 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:48:43.576 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:48:43.603 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:48:43.620 +08:00 INF] Will subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" for device type "Thermometer"
+[2026-01-21 10:48:43.621 +08:00 INF] Attempting to subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:48:43.654 +08:00 WRN] Characteristic "00002a1c-0000-1000-8000-00805f9b34fb" already has active subscription, clearing first
+[2026-01-21 10:48:47.805 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:48:47.889 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:48:47.891 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 10:48:47.893 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 10:48:47.893 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 10:48:48.952 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 10:48:48.955 +08:00 INF] Connection status changed for device 211273098927216: "Connecting"
+[2026-01-21 10:48:49.012 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:48:49.014 +08:00 INF] Successfully connected to device: 211273098927216
+[2026-01-21 10:48:49.015 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:48:49.016 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 10:48:49.016 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 10:48:49.017 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 10:48:49.072 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:48:49.074 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 10:48:49.075 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:48:49.526 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 10:48:49.585 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 10:48:49.602 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:48:49.614 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:48:49.642 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:48:49.651 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 10:48:50.167 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 10:48:50.677 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 10:48:50.692 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001523-1212-efde-1523-785feabcd123"
+[2026-01-21 10:48:50.694 +08:00 INF] Attempting fallback subscription to characteristic "00001524-1212-efde-1523-785feabcd123"
+[2026-01-21 10:48:50.724 +08:00 WRN] Characteristic "00001524-1212-efde-1523-785feabcd123" already has active subscription, clearing first
+[2026-01-21 10:48:54.087 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 10:48:54.089 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 10:48:54.090 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 10:48:54.146 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:48:54.147 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 10:48:54.148 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:48:59.461 +08:00 WRN] Error subscribing to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" (attempt 1/3)
+System.Runtime.InteropServices.COMException (0x80004004)
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToCharacteristicWithRetryAsync(GattCharacteristic characteristic) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 693
+[2026-01-21 10:49:00.488 +08:00 WRN] Characteristic "00002a1c-0000-1000-8000-00805f9b34fb" already has active subscription, clearing first
+[2026-01-21 10:49:04.165 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 10:49:04.167 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 10:49:04.167 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 10:49:04.224 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:49:04.227 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 10:49:04.228 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:49:07.154 +08:00 WRN] Failed to enable notifications for characteristic "00001524-1212-efde-1523-785feabcd123" (attempt 1/3): "Unreachable"
+[2026-01-21 10:49:07.156 +08:00 WRN] Unreachable error - device connection may be unstable
+[2026-01-21 10:49:08.169 +08:00 WRN] Characteristic "00001524-1212-efde-1523-785feabcd123" already has active subscription, clearing first
+[2026-01-21 10:49:09.234 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 10:49:09.240 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 10:49:09.244 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 10:49:09.302 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:49:09.304 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 10:49:09.305 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:49:14.315 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 10:49:14.317 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 10:49:14.317 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 10:49:14.375 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 10:49:14.377 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 10:49:14.378 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 10:49:22.734 +08:00 WRN] Error subscribing to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" (attempt 2/3)
+System.Runtime.InteropServices.COMException (0x80004004)
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToCharacteristicWithRetryAsync(GattCharacteristic characteristic) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 693
+[2026-01-21 10:49:23.752 +08:00 WRN] Characteristic "00002a1c-0000-1000-8000-00805f9b34fb" already has active subscription, clearing first
+[2026-01-21 10:49:30.436 +08:00 WRN] Failed to enable notifications for characteristic "00001524-1212-efde-1523-785feabcd123" (attempt 2/3): "Unreachable"
+[2026-01-21 10:49:30.439 +08:00 WRN] Unreachable error - device connection may be unstable
+[2026-01-21 10:49:31.441 +08:00 WRN] Characteristic "00001524-1212-efde-1523-785feabcd123" already has active subscription, clearing first
+[2026-01-21 10:49:33.594 +08:00 INF] Successfully enabled "Indicate" for characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 10:49:33.595 +08:00 INF] Successfully subscribed to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" on device 211273098927216
+[2026-01-21 10:49:33.603 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 10:49:33.660 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 69 01 00 FF DB 07 01 08 00 26 00 00
+[2026-01-21 10:49:33.663 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: true
+[2026-01-21 10:49:33.665 +08:00 INF] Valid data received from device C026DA031C70: "Thermometer"
+[2026-01-21 10:49:33.712 +08:00 INF] Successfully enabled "Notify" for characteristic "00001524-1212-efde-1523-785feabcd123"
+[2026-01-21 10:49:33.714 +08:00 INF] Successfully subscribed to fallback characteristic "00001524-1212-efde-1523-785feabcd123" on device 211273098927216
+[2026-01-21 10:49:33.715 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 1 characteristics
+[2026-01-21 10:49:34.118 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 10:49:34.628 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 10:49:34.630 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 1 characteristics
+[2026-01-21 10:49:47.816 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:49:47.930 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:49:59.587 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:49:59.678 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:50:00.833 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 F8 00 00 FF DB 07 01 08 00 27 00 00
+[2026-01-21 10:50:00.835 +08:00 WRN] 體溫數值超出正常範圍 - 溫度: 24.8°"Celsius"
+[2026-01-21 10:50:00.837 +08:00 WRN] 數據驗證失敗，設備: C026DA031C70, 類型: "Thermometer"
+[2026-01-21 10:50:00.838 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: false
+[2026-01-21 10:50:00.839 +08:00 WRN] Invalid data received from device C026DA031C70: null
+[2026-01-21 10:50:16.975 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:50:17.065 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:50:18.757 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:50:18.851 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:50:21.309 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:50:21.401 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:50:22.194 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 6B 01 00 FF DB 07 01 08 00 27 00 00
+[2026-01-21 10:50:22.196 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: true
+[2026-01-21 10:50:22.197 +08:00 INF] Valid data received from device C026DA031C70: "Thermometer"
+[2026-01-21 10:50:51.519 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:50:51.633 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:50:56.814 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 6C 01 00 FF DB 07 01 08 00 28 00 00
+[2026-01-21 10:50:56.816 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: true
+[2026-01-21 10:50:56.817 +08:00 INF] Valid data received from device C026DA031C70: "Thermometer"
+[2026-01-21 10:51:24.057 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:51:24.189 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:51:24.307 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:51:24.412 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:51:24.562 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:51:24.673 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:51:25.314 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 E1 00 00 FF DB 07 01 08 00 28 00 00
+[2026-01-21 10:51:25.316 +08:00 WRN] 體溫數值超出正常範圍 - 溫度: 22.5°"Celsius"
+[2026-01-21 10:51:25.317 +08:00 WRN] 數據驗證失敗，設備: C026DA031C70, 類型: "Thermometer"
+[2026-01-21 10:51:25.318 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: false
+[2026-01-21 10:51:25.320 +08:00 WRN] Invalid data received from device C026DA031C70: null
+[2026-01-21 10:55:57.254 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:55:57.372 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:55:59.044 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:55:59.137 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:56:00.480 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 6A 01 00 FF DB 07 01 08 00 2D 00 00
+[2026-01-21 10:56:00.482 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: true
+[2026-01-21 10:56:00.483 +08:00 INF] Valid data received from device C026DA031C70: "Thermometer"
+[2026-01-21 10:56:18.541 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:56:18.637 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:56:19.812 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:56:19.915 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:56:20.760 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 6B 01 00 FF DB 07 01 08 00 2D 00 00
+[2026-01-21 10:56:20.761 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: true
+[2026-01-21 10:56:20.762 +08:00 INF] Valid data received from device C026DA031C70: "Thermometer"
+[2026-01-21 10:56:43.788 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:56:43.882 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:56:45.660 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 FF 00 00 FF DB 07 01 08 00 2E 00 00
+[2026-01-21 10:56:45.662 +08:00 WRN] 體溫數值超出正常範圍 - 溫度: 25.5°"Celsius"
+[2026-01-21 10:56:45.663 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: true
+[2026-01-21 10:56:45.664 +08:00 INF] Valid data received from device C026DA031C70: "Thermometer"
+[2026-01-21 10:57:13.153 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:57:13.243 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:57:13.919 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:57:14.009 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:57:29.388 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 10:57:29.481 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 10:57:30.601 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 14 01 00 FF DB 07 01 08 00 2F 00 00
+[2026-01-21 10:57:30.603 +08:00 WRN] 體溫數值超出正常範圍 - 溫度: 27.6°"Celsius"
+[2026-01-21 10:57:30.604 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: true
+[2026-01-21 10:57:30.605 +08:00 INF] Valid data received from device C026DA031C70: "Thermometer"
+[2026-01-21 10:57:37.726 +08:00 INF] Shutdown requested by user
+[2026-01-21 10:57:37.726 +08:00 INF] Application shutdown initiated
+[2026-01-21 10:57:37.729 +08:00 INF] Stopping BLE Receiver...
+[2026-01-21 10:57:37.730 +08:00 INF] Stopping BLE advertisement watcher...
+[2026-01-21 10:57:37.731 +08:00 INF] BLE advertisement watcher stopped successfully
+[2026-01-21 10:57:37.732 +08:00 INF] Advertisement watcher stopped. Error: "Success"
+[2026-01-21 10:57:37.733 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 10:57:37.734 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 10:57:37.735 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 10:57:37.736 +08:00 INF] Disconnected from all devices
+[2026-01-21 10:57:37.738 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 10:57:37.739 +08:00 INF] Cleaned up all device subscriptions
+[2026-01-21 10:57:37.740 +08:00 INF] BLE Receiver stopped successfully
+[2026-01-21 10:57:37.740 +08:00 INF] Status displayed: Application stopped
+[2026-01-21 10:57:37.741 +08:00 INF] BLE Data Receiver stopped successfully
+[2026-01-21 11:31:04.490 +08:00 INF] BLE Data Receiver starting...
+[2026-01-21 11:31:04.609 +08:00 INF] Welcome message displayed
+[2026-01-21 11:31:04.612 +08:00 INF] Starting BLE Receiver...
+[2026-01-21 11:31:04.694 +08:00 INF] Starting BLE advertisement watcher...
+[2026-01-21 11:31:04.754 +08:00 INF] BLE advertisement watcher started successfully
+[2026-01-21 11:31:04.756 +08:00 INF] BLE Receiver started successfully
+[2026-01-21 11:31:20.176 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 11:31:20.326 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 11:31:20.330 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 11:31:20.331 +08:00 WRN] Device 211273098927216 not found in connection list
+[2026-01-21 11:31:21.414 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 11:31:21.417 +08:00 INF] Connection status changed for device 211273098927216: "Connecting"
+[2026-01-21 11:31:21.476 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:31:21.478 +08:00 INF] Successfully connected to device: 211273098927216
+[2026-01-21 11:31:21.480 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:31:21.483 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 11:31:21.484 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 11:31:21.485 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 11:31:21.541 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:31:21.543 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 11:31:21.544 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:31:21.692 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 11:31:21.780 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 11:31:21.781 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 11:31:21.991 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:31:22.054 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 11:31:22.074 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:31:22.088 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:31:22.115 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:31:22.125 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:31:22.645 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:31:23.167 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:31:23.183 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001523-1212-efde-1523-785feabcd123"
+[2026-01-21 11:31:23.184 +08:00 INF] Attempting fallback subscription to characteristic "00001524-1212-efde-1523-785feabcd123"
+[2026-01-21 11:31:23.218 +08:00 WRN] Characteristic "00001524-1212-efde-1523-785feabcd123" already has active subscription, clearing first
+[2026-01-21 11:31:26.998 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 11:31:27.000 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 11:31:28.065 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 11:31:28.067 +08:00 INF] Connection status changed for device 211273098927216: "Connecting"
+[2026-01-21 11:31:28.129 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:31:28.131 +08:00 INF] Successfully connected to device: 211273098927216
+[2026-01-21 11:31:28.132 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:31:28.639 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:31:28.706 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 11:31:28.725 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:31:28.738 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:31:28.768 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:31:28.784 +08:00 INF] Will subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" for device type "Thermometer"
+[2026-01-21 11:31:28.786 +08:00 INF] Attempting to subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:31:38.020 +08:00 WRN] Error subscribing to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" (attempt 1/3)
+System.Runtime.InteropServices.COMException (0x80004004)
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToCharacteristicWithRetryAsync(GattCharacteristic characteristic) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 800
+[2026-01-21 11:31:38.020 +08:00 WRN] Error subscribing to characteristic "00001524-1212-efde-1523-785feabcd123" (attempt 1/3)
+System.Runtime.InteropServices.COMException (0x80004004)
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToCharacteristicWithRetryAsync(GattCharacteristic characteristic) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 800
+[2026-01-21 11:31:38.453 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 11:31:38.455 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 11:31:38.456 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 11:31:38.510 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:31:38.513 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 11:31:38.514 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:31:40.519 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 11:31:40.521 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 11:31:40.522 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 11:31:40.578 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:31:40.580 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 11:31:40.581 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:31:42.594 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 11:31:42.596 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 11:31:42.596 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 11:31:42.655 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:31:42.657 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 11:31:42.657 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:31:44.671 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 11:31:44.672 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 11:31:44.673 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 11:31:44.731 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:31:44.733 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 11:31:44.734 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:31:46.738 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 11:31:46.739 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 11:31:46.740 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 11:31:46.745 +08:00 WRN] Failed to enable notifications for characteristic "00002a1c-0000-1000-8000-00805f9b34fb" (attempt 2/3): "Unreachable"
+[2026-01-21 11:31:46.747 +08:00 WRN] Unreachable error - device connection may be unstable
+[2026-01-21 11:31:46.796 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:31:46.797 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 11:31:46.799 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:31:47.307 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 11:31:47.396 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 11:31:47.397 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 11:31:48.266 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 11:31:48.268 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 11:31:48.647 +08:00 INF] Successfully enabled "Notify" for characteristic "00001524-1212-efde-1523-785feabcd123"
+[2026-01-21 11:31:48.653 +08:00 INF] Successfully subscribed to fallback characteristic "00001524-1212-efde-1523-785feabcd123" on device 211273098927216
+[2026-01-21 11:31:48.655 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 1 characteristics
+[2026-01-21 11:31:48.758 +08:00 INF] Successfully enabled "Indicate" for characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:31:48.760 +08:00 INF] Successfully subscribed to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" on device 211273098927216
+[2026-01-21 11:31:48.761 +08:00 ERR] Error subscribing to characteristics for device: 211273098927216
+System.ObjectDisposedException: Cannot access a disposed object.
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToDeviceCharacteristicsAsync(BluetoothLEDevice device, DeviceType deviceType) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 563
+[2026-01-21 11:31:48.884 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 6B 01 00 FF DB 07 01 08 01 15 00 00
+[2026-01-21 11:31:48.888 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: true
+[2026-01-21 11:31:48.890 +08:00 INF] Valid data received from device C026DA031C70: "Thermometer"
+[2026-01-21 11:31:48.891 +08:00 INF] Auto-disconnecting device 211273098927216 after successful data reception to ensure clean reconnection
+[2026-01-21 11:31:49.339 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 11:31:49.341 +08:00 INF] Connection status changed for device 211273098927216: "Connecting"
+[2026-01-21 11:31:49.401 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:31:49.403 +08:00 INF] Successfully connected to device: 211273098927216
+[2026-01-21 11:31:49.404 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:31:49.913 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:31:49.914 +08:00 INF] Device 211273098927216 already has 1 active subscriptions, skipping
+[2026-01-21 11:31:50.902 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 11:31:51.773 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 11:31:51.775 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 11:31:51.937 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:03.752 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 11:32:03.843 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 11:32:03.845 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:03.846 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 11:32:03.847 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 11:32:03.847 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 11:32:03.848 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:04.915 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 11:32:04.916 +08:00 INF] Connection status changed for device 211273098927216: "Connecting"
+[2026-01-21 11:32:04.978 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:32:04.979 +08:00 INF] Successfully connected to device: 211273098927216
+[2026-01-21 11:32:04.980 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:32:04.980 +08:00 INF] Device 211273098927216 reconnected, attempting to resubscribe to characteristics
+[2026-01-21 11:32:04.981 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 11:32:04.982 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 11:32:04.983 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 11:32:05.039 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:32:05.040 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 11:32:05.041 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:32:05.042 +08:00 INF] Device 211273098927216 reconnected, attempting to resubscribe to characteristics
+[2026-01-21 11:32:05.488 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:05.543 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 11:32:05.561 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:05.573 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:05.602 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:05.617 +08:00 INF] Will subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" for device type "Thermometer"
+[2026-01-21 11:32:05.618 +08:00 INF] Attempting to subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:05.620 +08:00 WRN] Characteristic "00002a1c-0000-1000-8000-00805f9b34fb" already has active subscription, clearing first
+[2026-01-21 11:32:05.986 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:05.988 +08:00 ERR] Error subscribing to characteristics for device: 211273098927216
+System.ObjectDisposedException: Cannot access a disposed object.
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToDeviceCharacteristicsAsync(BluetoothLEDevice device, DeviceType deviceType) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 521
+[2026-01-21 11:32:06.048 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:06.050 +08:00 ERR] Error subscribing to characteristics for device: 211273098927216
+System.ObjectDisposedException: Cannot access a disposed object.
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToDeviceCharacteristicsAsync(BluetoothLEDevice device, DeviceType deviceType) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 521
+[2026-01-21 11:32:06.998 +08:00 INF] Successfully enabled "Indicate" for characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:06.999 +08:00 INF] Successfully subscribed to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" on device 211273098927216
+[2026-01-21 11:32:07.015 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 1 characteristics
+[2026-01-21 11:32:07.057 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 6B 01 00 FF DB 07 01 08 01 15 00 00
+[2026-01-21 11:32:07.059 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: true
+[2026-01-21 11:32:07.060 +08:00 INF] Valid data received from device C026DA031C70: "Thermometer"
+[2026-01-21 11:32:07.061 +08:00 INF] Auto-disconnecting device 211273098927216 after successful data reception to ensure clean reconnection
+[2026-01-21 11:32:09.070 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 11:32:09.952 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 11:32:09.954 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 11:32:10.057 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:17.512 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:17.551 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:17.553 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:17.614 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 11:32:17.683 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:17.685 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:17.719 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 11:32:17.720 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:17.721 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 11:32:17.722 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 11:32:17.722 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 11:32:17.723 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:17.870 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 11:32:17.972 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 11:32:17.973 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:17.974 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 11:32:17.975 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 11:32:17.975 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 11:32:17.976 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:18.783 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 11:32:18.785 +08:00 INF] Connection status changed for device 211273098927216: "Connecting"
+[2026-01-21 11:32:18.847 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:32:18.848 +08:00 INF] Successfully connected to device: 211273098927216
+[2026-01-21 11:32:18.849 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:32:18.850 +08:00 INF] Device 211273098927216 reconnected, attempting to resubscribe to characteristics
+[2026-01-21 11:32:19.051 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 11:32:19.052 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 11:32:19.141 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 11:32:19.238 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 11:32:19.240 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:19.241 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 11:32:19.363 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:19.445 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 11:32:19.464 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:19.478 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:19.507 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:19.516 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:19.566 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:19.627 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 11:32:19.646 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:19.659 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:19.687 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:19.696 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:19.863 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:19.865 +08:00 ERR] Error subscribing to characteristics for device: 211273098927216
+System.ObjectDisposedException: Cannot access a disposed object.
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToDeviceCharacteristicsAsync(BluetoothLEDevice device, DeviceType deviceType) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 521
+[2026-01-21 11:32:20.040 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:20.127 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 11:32:20.129 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 11:32:20.130 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:20.212 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:20.544 +08:00 ERR] Error subscribing to characteristics for device: 211273098927216
+System.ObjectDisposedException: Cannot access a disposed object.
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToDeviceCharacteristicsAsync(BluetoothLEDevice device, DeviceType deviceType) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 563
+[2026-01-21 11:32:20.724 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:20.733 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:21.153 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:21.188 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:21.189 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:21.196 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:21.197 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:21.197 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 11:32:21.198 +08:00 INF] Connection status changed for device 211273098927216: "Connecting"
+[2026-01-21 11:32:21.252 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:21.255 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:32:21.256 +08:00 INF] Successfully connected to device: 211273098927216
+[2026-01-21 11:32:21.256 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:32:21.257 +08:00 INF] Device 211273098927216 reconnected, attempting to resubscribe to characteristics
+[2026-01-21 11:32:21.762 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:21.764 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 11:32:21.765 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 11:32:21.770 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:21.826 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 11:32:21.844 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:21.856 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:21.883 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:21.891 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:21.971 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:22.008 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:22.009 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:22.016 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:22.017 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:22.268 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:22.270 +08:00 ERR] Error subscribing to characteristics for device: 211273098927216
+System.ObjectDisposedException: Cannot access a disposed object.
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToDeviceCharacteristicsAsync(BluetoothLEDevice device, DeviceType deviceType) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 521
+[2026-01-21 11:32:22.409 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:22.789 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:22.823 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:22.825 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:22.832 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:22.833 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:22.932 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:22.941 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:23.456 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:23.980 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:23.982 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 11:32:23.983 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 11:32:27.451 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 11:32:27.453 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 11:32:27.454 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 11:32:27.509 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:32:27.510 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 11:32:27.511 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:32:27.512 +08:00 INF] Device 211273098927216 reconnected, attempting to resubscribe to characteristics
+[2026-01-21 11:32:28.080 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:28.115 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:28.117 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:28.156 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:28.158 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:28.521 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:28.579 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 11:32:28.597 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:28.611 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:28.639 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:28.648 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:28.889 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:28.925 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:28.926 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:28.934 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:28.936 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:29.164 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:29.526 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 11:32:29.528 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 11:32:29.529 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 11:32:29.584 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:32:29.586 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 11:32:29.586 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:32:29.587 +08:00 INF] Device 211273098927216 reconnected, attempting to resubscribe to characteristics
+[2026-01-21 11:32:29.675 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:29.684 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:30.199 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:30.595 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:30.652 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 11:32:30.670 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:30.682 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:30.709 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:30.719 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:30.727 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:30.728 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 11:32:30.729 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 11:32:31.242 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:31.366 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 11:32:31.461 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 11:32:31.462 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:31.463 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 11:32:31.754 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:31.763 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:32.280 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:32.336 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 11:32:32.342 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 11:32:32.343 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:32.785 +08:00 ERR] Error subscribing to characteristics for device: 211273098927216
+System.ObjectDisposedException: Cannot access a disposed object.
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToDeviceCharacteristicsAsync(BluetoothLEDevice device, DeviceType deviceType) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 563
+[2026-01-21 11:32:33.424 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 11:32:33.431 +08:00 INF] Connection status changed for device 211273098927216: "Connecting"
+[2026-01-21 11:32:33.492 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:32:33.493 +08:00 INF] Successfully connected to device: 211273098927216
+[2026-01-21 11:32:33.494 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:32:33.495 +08:00 INF] Device 211273098927216 reconnected, attempting to resubscribe to characteristics
+[2026-01-21 11:32:34.010 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:34.067 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 11:32:34.086 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:34.100 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:34.129 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:34.138 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:34.504 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:34.506 +08:00 ERR] Error subscribing to characteristics for device: 211273098927216
+System.ObjectDisposedException: Cannot access a disposed object.
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToDeviceCharacteristicsAsync(BluetoothLEDevice device, DeviceType deviceType) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 521
+[2026-01-21 11:32:34.545 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:34.659 +08:00 INF] Will subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" for device type "Thermometer"
+[2026-01-21 11:32:34.660 +08:00 INF] Attempting to subscribe to characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:34.685 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:34.687 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:34.727 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:34.728 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:35.363 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:35.398 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:35.399 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:35.406 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:35.407 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:38.538 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 11:32:38.638 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 11:32:38.640 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:38.641 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 11:32:38.795 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 11:32:38.891 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 11:32:38.892 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:38.893 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 11:32:39.834 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:39.869 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:39.870 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:39.876 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:39.877 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:40.067 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 11:32:40.165 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 11:32:40.166 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:40.167 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 11:32:42.100 +08:00 WRN] Error subscribing to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" (attempt 1/3)
+System.Runtime.InteropServices.COMException (0x80004004)
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToCharacteristicWithRetryAsync(GattCharacteristic characteristic) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 800
+[2026-01-21 11:32:42.654 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:42.692 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:42.693 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:42.702 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:42.703 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:42.924 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 11:32:42.925 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 11:32:42.926 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:42.987 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 11:32:42.988 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 11:32:42.989 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:43.033 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 11:32:43.034 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 11:32:43.035 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:43.145 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 11:32:43.252 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 11:32:43.253 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:43.253 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 11:32:43.255 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 11:32:43.256 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 11:32:43.257 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:43.466 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:43.504 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:43.505 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:43.512 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:43.513 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:43.780 +08:00 WRN] Error subscribing to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" (attempt 2/3)
+System.Runtime.InteropServices.COMException (0x80004004)
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToCharacteristicWithRetryAsync(GattCharacteristic characteristic) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 800
+[2026-01-21 11:32:43.995 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 11:32:43.997 +08:00 INF] Connection status changed for device 211273098927216: "Connecting"
+[2026-01-21 11:32:44.056 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:32:44.057 +08:00 INF] Successfully connected to device: 211273098927216
+[2026-01-21 11:32:44.057 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 11:32:44.058 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:32:44.059 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 11:32:44.060 +08:00 INF] Device 211273098927216 reconnected, attempting to resubscribe to characteristics
+[2026-01-21 11:32:44.061 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 11:32:44.062 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 11:32:44.063 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 11:32:44.105 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 11:32:44.107 +08:00 INF] Connection status changed for device 211273098927216: "Connecting"
+[2026-01-21 11:32:44.121 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:32:44.122 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 11:32:44.123 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:32:44.124 +08:00 INF] Device 211273098927216 reconnected, attempting to resubscribe to characteristics
+[2026-01-21 11:32:44.163 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:32:44.165 +08:00 INF] Successfully connected to device: 211273098927216
+[2026-01-21 11:32:44.166 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:32:44.167 +08:00 INF] Device 211273098927216 reconnected, attempting to resubscribe to characteristics
+[2026-01-21 11:32:44.167 +08:00 WRN] Connection lost to device 211273098927216, attempting reconnection
+[2026-01-21 11:32:44.168 +08:00 INF] Connection status changed for device 211273098927216: "Reconnecting"
+[2026-01-21 11:32:44.169 +08:00 INF] Reconnection attempt 1/3 for device 211273098927216
+[2026-01-21 11:32:44.223 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:32:44.225 +08:00 INF] Successfully reconnected to device 211273098927216 on attempt 1
+[2026-01-21 11:32:44.225 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:32:44.226 +08:00 INF] Device 211273098927216 reconnected, attempting to resubscribe to characteristics
+[2026-01-21 11:32:44.326 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 11:32:44.327 +08:00 INF] Device 211273098927216 is already connected
+[2026-01-21 11:32:44.422 +08:00 INF] Target device advertisement received from 211273098927216
+[2026-01-21 11:32:44.528 +08:00 INF] Device discovered: FORA IR40 (211273098927216), Type: "Thermometer"
+[2026-01-21 11:32:44.530 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:44.531 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 11:32:44.573 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:44.573 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:44.633 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 11:32:44.636 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 11:32:44.652 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:44.655 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:44.667 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:44.671 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:44.681 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:44.698 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:44.703 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:44.708 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:44.712 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:44.773 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 11:32:44.793 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:44.807 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:44.836 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:44.837 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:44.846 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:44.900 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 11:32:44.920 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:44.935 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:44.966 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:44.975 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:45.068 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:45.070 +08:00 ERR] Error subscribing to characteristics for device: 211273098927216
+System.ObjectDisposedException: Cannot access a disposed object.
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToDeviceCharacteristicsAsync(BluetoothLEDevice device, DeviceType deviceType) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 521
+[2026-01-21 11:32:45.130 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:45.131 +08:00 ERR] Error subscribing to characteristics for device: 211273098927216
+System.ObjectDisposedException: Cannot access a disposed object.
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToDeviceCharacteristicsAsync(BluetoothLEDevice device, DeviceType deviceType) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 521
+[2026-01-21 11:32:45.177 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:45.183 +08:00 ERR] Error subscribing to characteristics for device: 211273098927216
+System.ObjectDisposedException: Cannot access a disposed object.
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToDeviceCharacteristicsAsync(BluetoothLEDevice device, DeviceType deviceType) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 521
+[2026-01-21 11:32:45.232 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:45.232 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:45.239 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:45.240 +08:00 ERR] Error subscribing to characteristics for device: 211273098927216
+System.ObjectDisposedException: Cannot access a disposed object.
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToDeviceCharacteristicsAsync(BluetoothLEDevice device, DeviceType deviceType) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 521
+[2026-01-21 11:32:45.355 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:45.495 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:45.757 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:45.757 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:45.765 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:45.767 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:45.881 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:45.896 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001523-1212-efde-1523-785feabcd123"
+[2026-01-21 11:32:45.897 +08:00 INF] Attempting fallback subscription to characteristic "00001524-1212-efde-1523-785feabcd123"
+[2026-01-21 11:32:45.938 +08:00 INF] Successfully enabled "Indicate" for characteristic "00002a1c-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:45.939 +08:00 INF] Successfully subscribed to characteristic "00002a1c-0000-1000-8000-00805f9b34fb" on device 211273098927216
+[2026-01-21 11:32:45.940 +08:00 ERR] Error subscribing to characteristics for device: 211273098927216
+System.ObjectDisposedException: Cannot access a disposed object.
+   at BLEDataReceiver.Services.BLEReceiverService.SubscribeToDeviceCharacteristicsAsync(BluetoothLEDevice device, DeviceType deviceType) in C:\Users\User\Desktop\Temp\BLEReceiver\Services\BLEReceiverService.cs:line 563
+[2026-01-21 11:32:45.998 +08:00 INF] 收到體溫原始數據 - 設備: C026DA031C70, 長度: 13, 數據: 06 00 00 00 FF DB 07 01 08 01 16 00 00
+[2026-01-21 11:32:46.000 +08:00 WRN] 體溫數值超出正常範圍 - 溫度: 0°"Celsius"
+[2026-01-21 11:32:46.003 +08:00 WRN] 數據驗證失敗，設備: C026DA031C70, 類型: "Thermometer"
+[2026-01-21 11:32:46.004 +08:00 INF] 數據處理完成，設備: C026DA031C70, 類型: "Thermometer", 有效: false
+[2026-01-21 11:32:46.005 +08:00 WRN] Invalid data received from device C026DA031C70: null
+[2026-01-21 11:32:46.006 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:46.015 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:46.058 +08:00 INF] Successfully enabled "Notify" for characteristic "00001524-1212-efde-1523-785feabcd123"
+[2026-01-21 11:32:46.060 +08:00 INF] Successfully subscribed to fallback characteristic "00001524-1212-efde-1523-785feabcd123" on device 211273098927216
+[2026-01-21 11:32:46.061 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 1 characteristics
+[2026-01-21 11:32:46.284 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:46.284 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:46.290 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:46.324 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:46.326 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:46.335 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:46.335 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:46.532 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:46.618 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 11:32:46.620 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 11:32:46.718 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:46.794 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:46.794 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:46.796 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 11:32:46.797 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 11:32:46.799 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 11:32:46.799 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 11:32:47.057 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:47.059 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 11:32:47.060 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 11:32:47.688 +08:00 INF] Attempting to connect to device: 211273098927216 (FORA IR40)
+[2026-01-21 11:32:47.690 +08:00 INF] Connection status changed for device 211273098927216: "Connecting"
+[2026-01-21 11:32:47.747 +08:00 INF] Successfully retrieved 5 GATT services for device 211273098927216
+[2026-01-21 11:32:47.748 +08:00 INF] Successfully connected to device: 211273098927216
+[2026-01-21 11:32:47.750 +08:00 INF] Connection status changed for device 211273098927216: "Connected"
+[2026-01-21 11:32:47.750 +08:00 INF] Device 211273098927216 reconnected, attempting to resubscribe to characteristics
+[2026-01-21 11:32:48.263 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:48.328 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 11:32:48.347 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:48.361 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:48.391 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:48.400 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:48.760 +08:00 INF] Subscribing to characteristics for device: 211273098927216, Type: "Thermometer"
+[2026-01-21 11:32:48.822 +08:00 INF] Found 5 GATT services for device 211273098927216
+[2026-01-21 11:32:48.842 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001800-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:48.858 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "00001801-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:48.891 +08:00 WRN] No standard temperature characteristics found for thermometer device 211273098927216. Attempting to subscribe to all notification-capable characteristics in service "0000180a-0000-1000-8000-00805f9b34fb"
+[2026-01-21 11:32:48.900 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:48.921 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:49.418 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:49.432 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:49.441 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:49.933 +08:00 WRN] Failed to get characteristics for service "00001809-0000-1000-8000-00805f9b34fb" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:49.942 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:49.945 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 1/3): "AccessDenied"
+[2026-01-21 11:32:49.964 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:50.090 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:50.091 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:50.097 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:50.098 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:50.462 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 (attempt 2/3): "AccessDenied"
+[2026-01-21 11:32:50.478 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:50.480 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 11:32:50.481 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 11:32:50.753 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:50.901 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:50.902 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:50.908 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:50.909 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:50.978 +08:00 WRN] Failed to get characteristics for service "00001523-1212-efde-1523-785feabcd123" on device 211273098927216 after 3 attempts: "AccessDenied"
+[2026-01-21 11:32:50.979 +08:00 INF] Completed characteristic subscription for device 211273098927216. Subscribed to 0 characteristics
+[2026-01-21 11:32:50.980 +08:00 WRN] No characteristics were subscribed for device 211273098927216 of type "Thermometer". This may indicate the device doesn't support the expected characteristics or has different UUIDs.
+[2026-01-21 11:32:51.153 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:51.189 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:51.190 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:51.196 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:51.196 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:53.584 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:53.617 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:53.618 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:53.625 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:53.626 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:54.391 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:54.539 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:54.540 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:54.546 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:54.547 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:57.230 +08:00 INF] Target device advertisement received from 211273098966371
+[2026-01-21 11:32:57.265 +08:00 INF] Attempting automatic pairing for device: FORA D40
+[2026-01-21 11:32:57.266 +08:00 INF] Attempting to pair device: FORA D40 (211273098966371)
+[2026-01-21 11:32:57.273 +08:00 WRN] Failed to pair device 211273098966371. Status: "Failed"
+[2026-01-21 11:32:57.274 +08:00 WRN] Automatic pairing failed for device 211273098966371
+[2026-01-21 11:32:57.295 +08:00 INF] Application shutdown initiated
+[2026-01-21 11:32:57.295 +08:00 INF] Shutdown requested by user
+[2026-01-21 11:32:57.297 +08:00 INF] Stopping BLE Receiver...
+[2026-01-21 11:32:57.298 +08:00 INF] Stopping BLE advertisement watcher...
+[2026-01-21 11:32:57.299 +08:00 INF] BLE advertisement watcher stopped successfully
+[2026-01-21 11:32:57.300 +08:00 INF] Advertisement watcher stopped. Error: "Success"
+[2026-01-21 11:32:57.301 +08:00 INF] Disconnecting from device: 211273098927216
+[2026-01-21 11:32:58.194 +08:00 INF] Successfully disconnected from device: 211273098927216
+[2026-01-21 11:32:58.196 +08:00 INF] Connection status changed for device 211273098927216: "Disconnected"
+[2026-01-21 11:32:58.196 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:58.197 +08:00 INF] Disconnected from all devices
+[2026-01-21 11:32:58.199 +08:00 INF] Cleaned up subscriptions for device: 211273098927216
+[2026-01-21 11:32:58.200 +08:00 INF] Cleaned up all device subscriptions
+[2026-01-21 11:32:58.200 +08:00 INF] BLE Receiver stopped successfully
+[2026-01-21 11:32:58.201 +08:00 INF] Status displayed: Application stopped
+[2026-01-21 11:32:58.202 +08:00 INF] BLE Data Receiver stopped successfully

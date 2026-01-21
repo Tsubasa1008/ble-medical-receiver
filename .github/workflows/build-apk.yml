@@ -1,0 +1,96 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Setup Java JDK
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+    
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+    
+    - name: Cache Gradle packages
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.gradle/caches
+          ~/.gradle/wrapper
+        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+        restore-keys: |
+          ${{ runner.os }}-gradle-
+    
+    - name: Make gradlew executable
+      run: chmod +x android/gradlew
+    
+    - name: Install dependencies
+      run: npm install --legacy-peer-deps
+    
+    - name: Clean project
+      run: |
+        cd android
+        ./gradlew clean
+    
+    - name: Build APK
+      run: |
+        cd android
+        ./gradlew assembleRelease --no-daemon
+    
+    - name: Upload APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: BLE-Medical-Receiver-APK
+        path: android/app/build/outputs/apk/release/app-release.apk
+        retention-days: 30
+    
+    - name: Create Release
+      if: github.ref == 'refs/heads/main'
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: v1.0.${{ github.run_number }}
+        name: BLE Medical Receiver v1.0.${{ github.run_number }}
+        body: |
+          🩺 BLE 醫療數據接收器 Android APK
+          
+          ## 📱 功能特性
+          - ✅ 支持 FORA IR40 體溫計
+          - ✅ IEEE 11073 數據解析
+          - ✅ 實時數據顯示
+          - ✅ 數據歷史記錄
+          - ✅ 中文界面
+          
+          ## 📋 安裝要求
+          - Android 5.0+ (API 21)
+          - 藍牙 4.0+ (BLE)
+          - 位置權限 (掃描需要)
+          
+          ## 🔧 安裝步驟
+          1. 下載 APK 文件
+          2. 啟用"未知來源"安裝
+          3. 安裝並授予權限
+          4. 使用 FORA IR40 測試
+          
+          構建時間: ${{ github.event.head_commit.timestamp }}
+        files: android/app/build/outputs/apk/release/app-release.apk
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

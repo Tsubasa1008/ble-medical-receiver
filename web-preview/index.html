@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLE 醫療數據接收器 - Web 預覽</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #212121;
+        }
+        
+        .app-header {
+            background-color: #2196F3;
+            color: white;
+            padding: 16px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .app-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .tab-bar {
+            display: flex;
+            background-color: white;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .tab {
+            flex: 1;
+            padding: 16px;
+            text-align: center;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .tab.active {
+            border-bottom-color: #2196F3;
+            color: #2196F3;
+        }
+        
+        .tab:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .content {
+            padding: 16px;
+            min-height: calc(100vh - 120px);
+        }
+        
+        .device-card {
+            background: white;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .device-card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+        
+        .device-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .device-info {
+            display: flex;
+            align-items: center;
+        }
+        
+        .device-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+            color: #2196F3;
+        }
+        
+        .device-name {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+        
+        .device-id {
+            font-size: 12px;
+            color: #757575;
+        }
+        
+        .device-status {
+            text-align: right;
+        }
+        
+        .rssi {
+            font-size: 10px;
+            font-weight: 500;
+        }
+        
+        .device-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .chip {
+            padding: 4px 8px;
+            border-radius: 16px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .chip-outlined {
+            border: 1px solid #e3f2fd;
+            background-color: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .chip-connected {
+            background-color: #e8f5e8;
+            color: #2e7d32;
+        }
+        
+        .data-card {
+            background: white;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid #4CAF50;
+        }
+        
+        .data-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .data-type {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        .timestamp {
+            font-size: 12px;
+            color: #757575;
+        }
+        
+        .primary-value {
+            text-align: center;
+            margin: 16px 0;
+        }
+        
+        .value-number {
+            font-size: 32px;
+            font-weight: 700;
+            color: #2196F3;
+        }
+        
+        .value-unit {
+            font-size: 16px;
+            font-weight: 500;
+            color: #757575;
+            margin-left: 4px;
+        }
+        
+        .data-details {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 12px;
+        }
+        
+        .detail-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .detail-icon {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+            color: #757575;
+        }
+        
+        .fab {
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+            width: 56px;
+            height: 56px;
+            border-radius: 28px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            transition: all 0.3s;
+        }
+        
+        .fab:hover {
+            background-color: #1976D2;
+            transform: scale(1.1);
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 64px 32px;
+            color: #757575;
+        }
+        
+        .empty-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+            color: #bdbdbd;
+        }
+        
+        .empty-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        
+        .empty-subtitle {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .scanning {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-header">
+        <div class="app-title">🩺 BLE 醫療數據接收器</div>
+    </div>
+    
+    <div class="tab-bar">
+        <div class="tab active" onclick="showTab('devices')">📱 設備</div>
+        <div class="tab" onclick="showTab('data')">📊 數據</div>
+    </div>
+    
+    <div class="content">
+        <!-- 設備頁面 -->
+        <div id="devices-tab">
+            <div id="device-list">
+                <!-- 設備會動態添加到這裡 -->
+            </div>
+            
+            <div id="empty-devices" class="empty-state">
+                <div class="empty-icon">🔍</div>
+                <div class="empty-title">未發現設備</div>
+                <div class="empty-subtitle">點擊掃描按鈕開始搜尋醫療設備</div>
+            </div>
+        </div>
+        
+        <!-- 數據頁面 -->
+        <div id="data-tab" class="hidden">
+            <div id="data-list">
+                <!-- 數據會動態添加到這裡 -->
+            </div>
+            
+            <div id="empty-data" class="empty-state">
+                <div class="empty-icon">📈</div>
+                <div class="empty-title">暫無數據</div>
+                <div class="empty-subtitle">連接醫療設備並進行測量以查看數據</div>
+            </div>
+        </div>
+    </div>
+    
+    <button class="fab" id="scan-btn" onclick="toggleScan()">🔍</button>
+    
+    <script>
+        let isScanning = false;
+        let devices = [];
+        let measurements = [];
+        let currentTab = 'devices';
+        
+        // 模擬設備數據
+        const mockDevices = [
+            {
+                id: 'device-001',
+                name: 'FORA IR40',
+                type: 'thermometer',
+                rssi: -45,
+                connected: false
+            },
+            {
+                id: 'device-002', 
+                name: 'BP Monitor',
+                type: 'blood-pressure',
+                rssi: -67,
+                connected: false
+            }
+        ];
+        
+        // 模擬測量數據
+        const mockMeasurements = [
+            {
+                id: 'measure-001',
+                deviceId: 'device-001',
+                type: 'temperature',
+                value: 36.4,
+                unit: 'C',
+                timestamp: new Date(),
+                valid: true
+            },
+            {
+                id: 'measure-002',
+                deviceId: 'device-002', 
+                type: 'blood-pressure',
+                systolic: 120,
+                diastolic: 80,
+                heartRate: 72,
+                timestamp: new Date(Date.now() - 300000),
+                valid: true
+            }
+        ];
+        
+        function showTab(tab) {
+            currentTab = tab;
+            
+            // 更新標籤樣式
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelector(`[onclick="showTab('${tab}')"]`).classList.add('active');
+            
+            // 顯示對應內容
+            document.getElementById('devices-tab').classList.toggle('hidden', tab !== 'devices');
+            document.getElementById('data-tab').classList.toggle('hidden', tab !== 'data');
+            
+            // 更新 FAB
+            const fab = document.getElementById('scan-btn');
+            if (tab === 'devices') {
+                fab.style.display = 'flex';
+                fab.innerHTML = isScanning ? '⏹️' : '🔍';
+            } else {
+                fab.style.display = 'none';
+            }
+        }
+        
+        function toggleScan() {
+            isScanning = !isScanning;
+            const fab = document.getElementById('scan-btn');
+            
+            if (isScanning) {
+                fab.innerHTML = '⏹️';
+                fab.classList.add('scanning');
+                startScan();
+            } else {
+                fab.innerHTML = '🔍';
+                fab.classList.remove('scanning');
+                stopScan();
+            }
+        }
+        
+        function startScan() {
+            devices = [];
+            renderDevices();
+            
+            // 模擬設備發現
+            setTimeout(() => {
+                if (isScanning) {
+                    devices.push(mockDevices[0]);
+                    renderDevices();
+                }
+            }, 1000);
+            
+            setTimeout(() => {
+                if (isScanning) {
+                    devices.push(mockDevices[1]);
+                    renderDevices();
+                }
+            }, 2500);
+            
+            // 自動停止掃描
+            setTimeout(() => {
+                if (isScanning) {
+                    toggleScan();
+                }
+            }, 10000);
+        }
+        
+        function stopScan() {
+            // 停止掃描邏輯
+        }
+        
+        function connectDevice(deviceId) {
+            const device = devices.find(d => d.id === deviceId);
+            if (device) {
+                device.connected = !device.connected;
+                renderDevices();
+                
+                if (device.connected) {
+                    // 模擬數據接收
+                    setTimeout(() => {
+                        if (device.type === 'thermometer') {
+                            measurements.unshift({
+                                ...mockMeasurements[0],
+                                id: 'measure-' + Date.now(),
+                                timestamp: new Date()
+                            });
+                        } else {
+                            measurements.unshift({
+                                ...mockMeasurements[1],
+                                id: 'measure-' + Date.now(),
+                                timestamp: new Date()
+                            });
+                        }
+                        renderMeasurements();
+                        showTab('data');
+                    }, 2000);
+                }
+            }
+        }
+        
+        function renderDevices() {
+            const container = document.getElementById('device-list');
+            const empty = document.getElementById('empty-devices');
+            
+            if (devices.length === 0) {
+                container.innerHTML = '';
+                empty.style.display = 'block';
+                return;
+            }
+            
+            empty.style.display = 'none';
+            container.innerHTML = devices.map(device => `
+                <div class="device-card" onclick="connectDevice('${device.id}')">
+                    <div class="device-header">
+                        <div class="device-info">
+                            <div class="device-icon">${device.type === 'thermometer' ? '🌡️' : '❤️'}</div>
+                            <div>
+                                <div class="device-name">${device.name}</div>
+                                <div class="device-id">ID: ${device.id.substring(0, 8)}...</div>
+                            </div>
+                        </div>
+                        <div class="device-status">
+                            <div style="color: ${device.rssi > -50 ? '#4CAF50' : device.rssi > -70 ? '#FF9800' : '#F44336'}">
+                                📶
+                            </div>
+                            <div class="rssi" style="color: ${device.rssi > -50 ? '#4CAF50' : device.rssi > -70 ? '#FF9800' : '#F44336'}">
+                                ${device.rssi} dBm
+                            </div>
+                        </div>
+                    </div>
+                    <div class="device-footer">
+                        <div class="chip chip-outlined">
+                            ${device.type === 'thermometer' ? '體溫計' : '血壓計'}
+                        </div>
+                        ${device.connected ? '<div class="chip chip-connected">已連接</div>' : ''}
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function renderMeasurements() {
+            const container = document.getElementById('data-list');
+            const empty = document.getElementById('empty-data');
+            
+            if (measurements.length === 0) {
+                container.innerHTML = '';
+                empty.style.display = 'block';
+                return;
+            }
+            
+            empty.style.display = 'none';
+            container.innerHTML = measurements.map(measurement => {
+                if (measurement.type === 'temperature') {
+                    return `
+                        <div class="data-card">
+                            <div class="data-header">
+                                <div>
+                                    <div class="data-type">🌡️ 體溫計</div>
+                                    <div class="timestamp">${measurement.timestamp.toLocaleString('zh-TW')}</div>
+                                </div>
+                                <div class="chip" style="background-color: ${measurement.valid ? '#E8F5E8' : '#FFEBEE'}; color: ${measurement.valid ? '#2E7D32' : '#C62828'}">
+                                    ${measurement.valid ? '有效' : '無效'}
+                                </div>
+                            </div>
+                            <div class="primary-value">
+                                <span class="value-number">${measurement.value}</span>
+                                <span class="value-unit">°${measurement.unit}</span>
+                            </div>
+                            <div class="data-details">
+                                <div class="detail-row">
+                                    <div class="detail-icon">🌡️</div>
+                                    <div>體溫: ${measurement.value}°${measurement.unit}</div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="detail-icon">📊</div>
+                                    <div>範圍: ${measurement.value >= 36.1 && measurement.value <= 37.2 ? '正常' : '異常'}</div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    return `
+                        <div class="data-card">
+                            <div class="data-header">
+                                <div>
+                                    <div class="data-type">❤️ 血壓計</div>
+                                    <div class="timestamp">${measurement.timestamp.toLocaleString('zh-TW')}</div>
+                                </div>
+                                <div class="chip" style="background-color: ${measurement.valid ? '#E8F5E8' : '#FFEBEE'}; color: ${measurement.valid ? '#2E7D32' : '#C62828'}">
+                                    ${measurement.valid ? '有效' : '無效'}
+                                </div>
+                            </div>
+                            <div class="primary-value">
+                                <span class="value-number">${measurement.systolic}/${measurement.diastolic}</span>
+                                <span class="value-unit">mmHg</span>
+                            </div>
+                            <div class="data-details">
+                                <div class="detail-row">
+                                    <div class="detail-icon">❤️</div>
+                                    <div>收縮壓: ${measurement.systolic} mmHg</div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="detail-icon">💙</div>
+                                    <div>舒張壓: ${measurement.diastolic} mmHg</div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="detail-icon">💓</div>
+                                    <div>心率: ${measurement.heartRate} bpm</div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            }).join('');
+        }
+        
+        // 初始化
+        renderDevices();
+        renderMeasurements();
+    </script>
+</body>
+</html>
