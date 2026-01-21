@@ -44,9 +44,6 @@ jobs:
     - name: Install dependencies
       run: npm install --legacy-peer-deps
     
-    - name: Link React Native assets
-      run: npx react-native-asset
-    
     - name: Clean project
       run: |
         cd android
