@@ -13,7 +13,7 @@ buildscript {
         gradlePluginPortal()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:8.0.1")
+        classpath("com.android.tools.build:gradle:7.4.2")
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
     }
@@ -24,5 +24,16 @@ allprojects {
         google()
         mavenCentral()
         maven { url 'https://www.jitpack.io' }
+    }
+    
+    // 為所有 Android 項目啟用 BuildConfig
+    afterEvaluate { project ->
+        if (project.hasProperty("android")) {
+            android {
+                buildFeatures {
+                    buildConfig true
+                }
+            }
+        }
     }
 }

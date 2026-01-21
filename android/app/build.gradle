@@ -8,10 +8,6 @@ android {
 
     namespace "com.bledatareceiver"
     
-    buildFeatures {
-        buildConfig true
-    }
-    
     defaultConfig {
         applicationId "com.bledatareceiver"
         minSdkVersion rootProject.ext.minSdkVersion
