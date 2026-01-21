@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Chip } from 'react-native-paper';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import { ConnectionStatus as Status } from '../types';
 
 interface ConnectionStatusProps {

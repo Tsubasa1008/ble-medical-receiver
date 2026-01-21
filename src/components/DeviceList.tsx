@@ -8,7 +8,6 @@ import {
   RefreshControl,
 } from 'react-native';
 import { Card, Button, Chip, ActivityIndicator } from 'react-native-paper';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import { BLEDevice, DeviceType } from '../types';
 
 interface DeviceListProps {
@@ -27,11 +26,11 @@ export const DeviceList: React.FC<DeviceListProps> = ({
   const getDeviceIcon = (deviceType: DeviceType): string => {
     switch (deviceType) {
       case DeviceType.THERMOMETER:
-        return 'thermostat';
+        return '🌡️';
       case DeviceType.BLOOD_PRESSURE_MONITOR:
-        return 'favorite';
+        return '🩺';
       default:
-        return 'bluetooth';
+        return '📱';
     }
   };
 
@@ -46,11 +45,11 @@ export const DeviceList: React.FC<DeviceListProps> = ({
     }
   };
 
-  const getSignalStrength = (rssi: number): { icon: string; color: string } => {
-    if (rssi > -50) return { icon: 'signal-wifi-4-bar', color: '#4CAF50' };
-    if (rssi > -70) return { icon: 'signal-wifi-3-bar', color: '#FF9800' };
-    if (rssi > -90) return { icon: 'signal-wifi-2-bar', color: '#FF5722' };
-    return { icon: 'signal-wifi-1-bar', color: '#F44336' };
+  const getSignalStrength = (rssi: number): { text: string; color: string } => {
+    if (rssi > -50) return { text: '📶', color: '#4CAF50' };
+    if (rssi > -70) return { text: '📶', color: '#FF9800' };
+    if (rssi > -90) return { text: '📶', color: '#FF5722' };
+    return { text: '📶', color: '#F44336' };
   };
 
   const renderDevice = ({ item }: { item: BLEDevice }) => {
@@ -64,12 +63,9 @@ export const DeviceList: React.FC<DeviceListProps> = ({
         >
           <View style={styles.deviceHeader}>
             <View style={styles.deviceInfo}>
-              <Icon
-                name={getDeviceIcon(item.deviceType)}
-                size={24}
-                color="#2196F3"
-                style={styles.deviceIcon}
-              />
+              <Text style={styles.deviceIcon}>
+                {getDeviceIcon(item.deviceType)}
+              </Text>
               <View style={styles.deviceDetails}>
                 <Text style={styles.deviceName}>
                   {item.name || '未知設備'}
@@ -81,11 +77,9 @@ export const DeviceList: React.FC<DeviceListProps> = ({
             </View>
             
             <View style={styles.deviceStatus}>
-              <Icon
-                name={signal.icon}
-                size={20}
-                color={signal.color}
-              />
+              <Text style={[styles.signalIcon, { color: signal.color }]}>
+                {signal.text}
+              </Text>
               <Text style={[styles.rssiText, { color: signal.color }]}>
                 {item.rssi} dBm
               </Text>
@@ -119,7 +113,7 @@ export const DeviceList: React.FC<DeviceListProps> = ({
 
   const renderEmpty = () => (
     <View style={styles.emptyContainer}>
-      <Icon name="bluetooth-searching" size={64} color="#BDBDBD" />
+      <Text style={styles.emptyIcon}>🔍</Text>
       <Text style={styles.emptyTitle}>
         {isScanning ? '正在搜尋設備...' : '未發現設備'}
       </Text>
@@ -216,7 +210,15 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   deviceIcon: {
+    fontSize: 24,
     marginRight: 12,
+  },
+  signalIcon: {
+    fontSize: 16,
+  },
+  emptyIcon: {
+    fontSize: 64,
+    color: '#BDBDBD',
   },
   deviceDetails: {
     flex: 1,

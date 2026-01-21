@@ -40,6 +40,3 @@ jest.mock('@react-native-async-storage/async-storage', () => ({
   setItem: jest.fn(() => Promise.resolve()),
   removeItem: jest.fn(() => Promise.resolve()),
 }));
-
-// Mock react-native-vector-icons
-jest.mock('react-native-vector-icons/MaterialIcons', () => 'Icon');

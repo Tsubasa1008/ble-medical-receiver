@@ -2,7 +2,7 @@ module.exports = {
   preset: 'react-native',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   transformIgnorePatterns: [
-    'node_modules/(?!(react-native|@react-native|react-native-ble-plx|react-native-paper|react-native-vector-icons)/)',
+    'node_modules/(?!(react-native|@react-native|react-native-ble-plx|react-native-paper)/)',
   ],
   testMatch: [
     '**/__tests__/**/*.(ts|tsx|js)',

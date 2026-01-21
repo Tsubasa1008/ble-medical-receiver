@@ -7,7 +7,6 @@ import {
   Animated,
 } from 'react-native';
 import { Card, Chip, Divider } from 'react-native-paper';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import { MedicalData, TemperatureData, BloodPressureData, DeviceType } from '../types';
 
 interface DataDisplayProps {
@@ -19,36 +18,26 @@ export const DataDisplay: React.FC<DataDisplayProps> = ({
   data,
   onDataPress,
 }) => {
-  const fadeAnim = React.useRef(new Animated.Value(0)).current;
-
-  React.useEffect(() => {
-    if (data.length > 0) {
-      Animated.timing(fadeAnim, {
-        toValue: 1,
-        duration: 300,
-        useNativeDriver: true,
-      }).start();
-    }
-  }, [data.length]);
-
   const formatTimestamp = (timestamp: Date): string => {
     return new Intl.DateTimeFormat('zh-TW', {
+      year: 'numeric',
       month: '2-digit',
       day: '2-digit',
       hour: '2-digit',
       minute: '2-digit',
       second: '2-digit',
+      hour12: false,
     }).format(timestamp);
   };
 
   const getDeviceIcon = (deviceType: DeviceType): string => {
     switch (deviceType) {
       case DeviceType.THERMOMETER:
-        return 'thermostat';
+        return '🌡️';
       case DeviceType.BLOOD_PRESSURE_MONITOR:
-        return 'favorite';
+        return '🩺';
       default:
-        return 'device-unknown';
+        return '📱';
     }
   };
 
@@ -57,148 +46,140 @@ export const DataDisplay: React.FC<DataDisplayProps> = ({
   };
 
   const getValidityIcon = (isValid: boolean): string => {
-    return isValid ? 'check-circle' : 'error';
+    return isValid ? '✅' : '❌';
   };
 
-  const renderTemperatureData = (tempData: TemperatureData) => (
-    <View style={styles.dataContent}>
-      <View style={styles.primaryValue}>
-        <Text style={styles.valueNumber}>
-          {tempData.temperature.toFixed(1)}
+  const renderTemperatureData = (data: TemperatureData) => (
+    <View style={styles.dataDetails}>
+      <View style={styles.detailRow}>
+        <Text style={styles.detailIcon}>🌡️</Text>
+        <Text style={styles.detailText}>
+          體溫: {data.temperature.toFixed(1)}°{data.unit}
         </Text>
-        <Text style={styles.valueUnit}>°{tempData.unit}</Text>
       </View>
       
-      <View style={styles.dataDetails}>
-        <View style={styles.detailRow}>
-          <Icon name="thermostat" size={16} color="#757575" />
-          <Text style={styles.detailText}>
-            體溫: {tempData.temperature.toFixed(1)}°{tempData.unit}
-          </Text>
-        </View>
-        
-        <View style={styles.detailRow}>
-          <Icon name="assessment" size={16} color="#757575" />
-          <Text style={styles.detailText}>
-            範圍: {tempData.temperature >= 36.1 && tempData.temperature <= 37.2 ? '正常' : '異常'}
-          </Text>
-        </View>
+      <View style={styles.detailRow}>
+        <Text style={styles.detailIcon}>📊</Text>
+        <Text style={styles.detailText}>
+          範圍: {data.temperature >= 36.1 && data.temperature <= 37.2 ? '正常' : '異常'}
+        </Text>
       </View>
+      
+      {data.isFever && (
+        <Chip 
+          mode="flat" 
+          textStyle={styles.warningChipText}
+          style={styles.warningChip}
+        >
+          ⚠️ 發燒警告
+        </Chip>
+      )}
     </View>
   );
 
-  const renderBloodPressureData = (bpData: BloodPressureData) => (
-    <View style={styles.dataContent}>
-      <View style={styles.primaryValue}>
-        <Text style={styles.valueNumber}>
-          {bpData.systolicPressure.toFixed(0)}/{bpData.diastolicPressure.toFixed(0)}
+  const renderBloodPressureData = (data: BloodPressureData) => (
+    <View style={styles.dataDetails}>
+      <View style={styles.detailRow}>
+        <Text style={styles.detailIcon}>💓</Text>
+        <Text style={styles.detailText}>
+          收縮壓: {data.systolicPressure.toFixed(0)} mmHg
         </Text>
-        <Text style={styles.valueUnit}>mmHg</Text>
       </View>
       
-      <View style={styles.dataDetails}>
-        <View style={styles.detailRow}>
-          <Icon name="favorite" size={16} color="#757575" />
-          <Text style={styles.detailText}>
-            收縮壓: {bpData.systolicPressure.toFixed(0)} mmHg
-          </Text>
-        </View>
-        
-        <View style={styles.detailRow}>
-          <Icon name="favorite-border" size={16} color="#757575" />
-          <Text style={styles.detailText}>
-            舒張壓: {bpData.diastolicPressure.toFixed(0)} mmHg
-          </Text>
-        </View>
-        
-        <View style={styles.detailRow}>
-          <Icon name="monitor-heart" size={16} color="#757575" />
-          <Text style={styles.detailText}>
-            心率: {bpData.heartRate} bpm
-          </Text>
-        </View>
+      <View style={styles.detailRow}>
+        <Text style={styles.detailIcon}>💗</Text>
+        <Text style={styles.detailText}>
+          舒張壓: {data.diastolicPressure.toFixed(0)} mmHg
+        </Text>
       </View>
+      
+      <View style={styles.detailRow}>
+        <Text style={styles.detailIcon}>❤️</Text>
+        <Text style={styles.detailText}>
+          心率: {data.heartRate} bpm
+        </Text>
+      </View>
+      
+      {data.isHypertensive && (
+        <Chip 
+          mode="flat" 
+          textStyle={styles.warningChipText}
+          style={styles.warningChip}
+        >
+          ⚠️ 高血壓警告
+        </Chip>
+      )}
     </View>
   );
 
-  const renderDataItem = ({ item, index }: { item: MedicalData; index: number }) => (
-    <Animated.View
-      style={[
-        styles.dataCard,
-        {
-          opacity: fadeAnim,
-          transform: [
-            {
-              translateY: fadeAnim.interpolate({
-                inputRange: [0, 1],
-                outputRange: [50, 0],
-              }),
-            },
-          ],
-        },
-      ]}
-    >
-      <Card
-        mode="outlined"
+  const renderDataItem = ({ item, index }: { item: MedicalData; index: number }) => {
+    const animatedValue = new Animated.Value(0);
+    
+    React.useEffect(() => {
+      Animated.timing(animatedValue, {
+        toValue: 1,
+        duration: 300,
+        delay: index * 100,
+        useNativeDriver: true,
+      }).start();
+    }, []);
+
+    return (
+      <Animated.View
         style={[
-          styles.card,
-          { borderLeftColor: getValidityColor(item.isValid), borderLeftWidth: 4 }
+          styles.cardContainer,
+          {
+            opacity: animatedValue,
+            transform: [
+              {
+                translateY: animatedValue.interpolate({
+                  inputRange: [0, 1],
+                  outputRange: [50, 0],
+                }),
+              },
+            ],
+          },
         ]}
-        onPress={() => onDataPress?.(item)}
       >
-        <View style={styles.cardHeader}>
-          <View style={styles.deviceInfo}>
-            <Icon
-              name={getDeviceIcon(item.deviceType)}
-              size={24}
-              color="#2196F3"
-            />
-            <View style={styles.deviceDetails}>
-              <Text style={styles.deviceType}>
-                {item.deviceType === DeviceType.THERMOMETER ? '體溫計' : '血壓計'}
-              </Text>
-              <Text style={styles.timestamp}>
-                {formatTimestamp(item.timestamp)}
-              </Text>
+        <Card style={styles.dataCard} onPress={() => onDataPress?.(item)}>
+          <Card.Content>
+            <View style={styles.cardHeader}>
+              <View style={styles.deviceInfo}>
+                <Text style={styles.deviceIcon}>
+                  {getDeviceIcon(item.deviceType)}
+                </Text>
+                <View>
+                  <Text style={styles.deviceName}>
+                    {item.deviceType === DeviceType.THERMOMETER ? '體溫計' : '血壓計'}
+                  </Text>
+                  <Text style={styles.timestamp}>
+                    {formatTimestamp(item.timestamp)}
+                  </Text>
+                </View>
+              </View>
+              
+              <View style={styles.validityIndicator}>
+                <Text style={[styles.validityIcon, { color: getValidityColor(item.isValid) }]}>
+                  {getValidityIcon(item.isValid)}
+                </Text>
+              </View>
             </View>
-          </View>
-          
-          <View style={styles.validityIndicator}>
-            <Icon
-              name={getValidityIcon(item.isValid)}
-              size={20}
-              color={getValidityColor(item.isValid)}
-            />
-            <Chip
-              mode="flat"
-              compact
-              style={[
-                styles.validityChip,
-                { backgroundColor: item.isValid ? '#E8F5E8' : '#FFEBEE' }
-              ]}
-              textStyle={[
-                styles.validityText,
-                { color: getValidityColor(item.isValid) }
-              ]}
-            >
-              {item.isValid ? '有效' : '無效'}
-            </Chip>
-          </View>
-        </View>
-
-        <Divider style={styles.divider} />
-
-        {item.deviceType === DeviceType.THERMOMETER
-          ? renderTemperatureData(item as TemperatureData)
-          : renderBloodPressureData(item as BloodPressureData)
-        }
-      </Card>
-    </Animated.View>
-  );
+            
+            <Divider style={styles.divider} />
+            
+            {item.deviceType === DeviceType.THERMOMETER 
+              ? renderTemperatureData(item as TemperatureData)
+              : renderBloodPressureData(item as BloodPressureData)
+            }
+          </Card.Content>
+        </Card>
+      </Animated.View>
+    );
+  };
 
   const renderEmpty = () => (
     <View style={styles.emptyContainer}>
-      <Icon name="insert-chart" size={64} color="#BDBDBD" />
+      <Text style={styles.emptyIcon}>📊</Text>
       <Text style={styles.emptyTitle}>暫無數據</Text>
       <Text style={styles.emptySubtitle}>
         連接醫療設備並進行測量以查看數據
@@ -208,21 +189,13 @@ export const DataDisplay: React.FC<DataDisplayProps> = ({
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.headerTitle}>測量數據</Text>
-        <Chip mode="outlined" compact>
-          {data.length} 筆記錄
-        </Chip>
-      </View>
-
       <FlatList
         data={data}
         renderItem={renderDataItem}
-        keyExtractor={(item, index) => `${item.deviceId}-${index}`}
+        keyExtractor={(item, index) => `${item.deviceId}-${item.timestamp.getTime()}-${index}`}
         contentContainerStyle={styles.listContainer}
-        ListEmptyComponent={renderEmpty}
         showsVerticalScrollIndicator={false}
-        inverted // 最新數據在頂部
+        ListEmptyComponent={renderEmpty}
       />
     </View>
   );
@@ -233,49 +206,39 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#F5F5F5',
   },
-  header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    backgroundColor: '#FFFFFF',
-    borderBottomWidth: 1,
-    borderBottomColor: '#E0E0E0',
-  },
-  headerTitle: {
-    fontSize: 18,
-    fontWeight: '600',
-    color: '#212121',
-  },
   listContainer: {
     padding: 16,
     flexGrow: 1,
   },
-  dataCard: {
+  cardContainer: {
     marginBottom: 12,
   },
-  card: {
+  dataCard: {
     backgroundColor: '#FFFFFF',
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.22,
+    shadowRadius: 2.22,
   },
   cardHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 16,
-    paddingBottom: 8,
+    marginBottom: 8,
   },
   deviceInfo: {
     flexDirection: 'row',
     alignItems: 'center',
     flex: 1,
   },
-  deviceDetails: {
-    marginLeft: 12,
+  deviceIcon: {
+    fontSize: 24,
+    marginRight: 12,
   },
-  deviceType: {
+  deviceName: {
     fontSize: 16,
-    fontWeight: '500',
+    fontWeight: '600',
     color: '#212121',
   },
   timestamp: {
@@ -286,52 +249,38 @@ const styles = StyleSheet.create({
   validityIndicator: {
     alignItems: 'center',
   },
-  validityChip: {
-    marginTop: 4,
-  },
-  validityText: {
-    fontSize: 10,
-    fontWeight: '500',
+  validityIcon: {
+    fontSize: 20,
   },
   divider: {
-    marginHorizontal: 16,
-  },
-  dataContent: {
-    padding: 16,
-    paddingTop: 12,
-  },
-  primaryValue: {
-    flexDirection: 'row',
-    alignItems: 'baseline',
-    justifyContent: 'center',
-    marginBottom: 16,
-  },
-  valueNumber: {
-    fontSize: 32,
-    fontWeight: '700',
-    color: '#2196F3',
-  },
-  valueUnit: {
-    fontSize: 16,
-    fontWeight: '500',
-    color: '#757575',
-    marginLeft: 4,
+    marginVertical: 12,
+    backgroundColor: '#E0E0E0',
   },
   dataDetails: {
-    backgroundColor: '#F8F9FA',
-    borderRadius: 8,
-    padding: 12,
+    gap: 8,
   },
   detailRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 8,
+  },
+  detailIcon: {
+    fontSize: 16,
+    marginRight: 8,
+    width: 20,
   },
   detailText: {
     fontSize: 14,
     color: '#424242',
-    marginLeft: 8,
     flex: 1,
+  },
+  warningChip: {
+    backgroundColor: '#FFF3E0',
+    marginTop: 8,
+    alignSelf: 'flex-start',
+  },
+  warningChipText: {
+    color: '#E65100',
+    fontSize: 12,
   },
   emptyContainer: {
     flex: 1,
@@ -339,18 +288,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 64,
   },
+  emptyIcon: {
+    fontSize: 64,
+    color: '#BDBDBD',
+    marginBottom: 16,
+  },
   emptyTitle: {
     fontSize: 18,
-    fontWeight: '500',
+    fontWeight: '600',
     color: '#757575',
-    marginTop: 16,
     marginBottom: 8,
   },
   emptySubtitle: {
     fontSize: 14,
     color: '#9E9E9E',
     textAlign: 'center',
-    lineHeight: 20,
     paddingHorizontal: 32,
   },
 });
